@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    margin-left: 32px;
+    background-image: url(asset/logo.png);
+}
+.container nav{
+    margin-right: 32px;
+ 
+}
+.container button{
+    border-radius: 8px;
+    background-color: #00BFFF;
+    width: 70px;
+    height: 30px;
+    border: none;
+
+}
+.container nav a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:small;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.container nav :hover a{
+    color:#FFD700;
+}
+.container nav :active a{
+    color: 	#DC143C;
+}
+hr{
+    margin-top: 0;
+}
+header h1,h4{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 24px
+}
+.main-container{
+    display: flex;
+    width: 100%;
+    margin-top: 8px;
+}
+.container-one{
+    width: 50%;
+    border: 1px solid black;
+    margin: 8px 8px 8px 8px;
+}
+
+.travel-image{
+    width: 450px;
+    height: 300px;
+    border: 1px solid black;
+    background-image:url(asset/travel-img.png);
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    background-size: cover;
+    background-position: center;
+}
+.author-logo {
+    font-size: 30px;
+    color: #333; 
+    float: left;
+    margin-left: 24px;
+    margin-right: 4px;
+    
+}
+.clear{
+    float: left;
+}
+.review {
+    margin-left: 16px;
+    font-size: small;
+
+}
+.fitur p{
+    margin-left: 16px;
+    text-align: left;
+}
+.benefit-fitur{
+    margin-left: 48px;
+    text-align: left;
+    line-height: normal;
+}
+.container-two{
+    width: 50%;
+    border: 1px solid black;
+    margin: 8px 8px 8px 8px;
+    padding: 58px;
+}
+.container-two h3{
+    padding-bottom: 8px;
+}
+.container-input{
+    padding-left: 50px;
+}
+input{
+    width: 250px; 
+    height: 35px; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    
+}
+select{
+    width: 250px; 
+    height: 35px; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    
+}
+
+input[type="submit"] {
+    width: 80px; 
+    height: 35px;
+    font-size: 16px;
+    background-color:#48D1CC; 
+    color:#000000; 
+    border: 1px solid #696969; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-weight: bold;
+    font-size: 18px;
+}
+input[type="submit"]:hover{
+    color: #DC143C;
+    background: 	#00FF00;
+}
+input[type="submit"]:active{
+    color: #FFD700;
+}
