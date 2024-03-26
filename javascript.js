@@ -1,32 +1,34 @@
 function validateForm() {
-    var username = document.getElementById("username").value;
+    var name = document.getElementById("username").value;
     var email = document.getElementById("email").value;
     var location = document.getElementById("location").value;
 
-    if (username == "") {
-        console.log("Error: Please enter your name");
+    if (name == "") {
+        document.getElementById("nameError").innerHTML = "Please enter your name";
         return false;
+    } else {
+        document.getElementById("nameError").innerHTML = "";
     }
 
     if (email == "") {
-        console.log("Error: Please enter your email address");
+        document.getElementById("emailError").innerHTML = "Please enter your email address";
         return false;
     } else {
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            console.log("Error: Please enter a valid email address");
+            document.getElementById("emailError").innerHTML = "Please enter a valid email address";
             return false;
+        } else {
+            document.getElementById("emailError").innerHTML = "";
         }
     }
 
     if (location == "") {
-        console.log("Error: Please select your interest");
+        document.getElementById("locationError").innerHTML = "Please select your interest";
         return false;
+    } else {
+        document.getElementById("locationError").innerHTML = "";
     }
 
-    sendForm();{
-        return true;
-    }
- 
+    return true;
 }
-
