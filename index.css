@@ -89,11 +89,11 @@ header h4{
     background-position: center;
     border-radius: 15px;
 }
-.author-logo {
-    font-size: 30px;
+.fa-circle-user{
+    font-size: 24px;
     color: #333; 
     float: left;
-    margin-left: 24px;
+    margin-left: 16px;
     margin-right: 4px;
     
 }
@@ -101,7 +101,7 @@ header h4{
     float: left;
 }
 .review {
-    margin-left: 16px;
+    margin-left: 24px;
     font-size: small;
 
 }
@@ -307,37 +307,42 @@ footer{
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .main-container {
-        margin-top: 4px; 
+@media only screen and (min-width: 768px) {
+    .container {
+        position: static; 
+        margin: auto; 
+        width: 100%; 
     }
-    .container-one {
-        width: 90%; 
-        margin: 8px auto; 
+
+    .main-container {
+        margin-top: 0;
+    }
+
+    .container-one, {
+        width: 45%; 
+        margin: 8px; 
+
     }
     #.container-two{
-        width: 90%; 
-        margin: 8px auto; 
+        width: 45%; 
+        margin: 8px; 
     }
-        .container-input {
-            padding: 0%; 
-        }
-        input, select {
-            width: 100%; 
-        }
-    
-        input[type="submit"] {
-            width: 100%; 
-            margin-top: 16px; 
-        }
-
-
+    .travel-image {
+        width:90%; 
+        height: 120px; 
+        border-radius: 0;
+    }
+    hr{
+        display: none;
+    }
+    .container-input {
+        padding:0%; 
+    }
+    input, select {
+        width: 100%; 
+    }
+    input[type="submit"] {
+        width: 100%; 
+        margin-top: 16px; 
+    }
 }
-
-
-
-
-
-
-
-
