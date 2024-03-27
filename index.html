@@ -6,6 +6,9 @@
     <title>Travel.Agents</title>
     <link rel="stylesheet" link href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="javascript.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     
 
 </head>
@@ -15,9 +18,9 @@
         <div class="container">
             <div class="logo"></div>
             <nav>
-                <button><a href="#">Home</a></button> 
-                <button><a href="#">Our Package</a></button> 
-                <button><a href="#">Call Us</a></button> 
+                <button><a href="index.html">Home</a></button> 
+                <button><a href="#Our Package">Our Package</a></button> 
+                <button><a href="#container-two">Call Us</a></button> 
             </nav>
         </div>
     </section><hr>
@@ -79,12 +82,9 @@
                             </li>
                         </ol>
                     </div>
-                 </section>
             </div>
-
-
-            <section></section>
-            <div class="container-two">
+      
+            <div id="container-two">
                 <h3>Contact Us</h3>
                 <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p><br/><br/>
                 <div class="container-input">
@@ -116,44 +116,61 @@
             </div>
         </section>
 
-    </section>
-    <script>
-        function validateForm() {
-    var name = document.getElementById("username").value;
-    var email = document.getElementById("email").value;
-    var location = document.getElementById("location").value;
+        <section>
+            <header>
+                <h1> Our Package</h1>
+            </header>
+            <div id="Our Package">
+                <div class="package">
+                    <div class="item">
+                            <i class='fas fa-lightbulb'></i>
+                            <h3>Bali</h3>
+                            <p>Jangan lewatkan kesempatan untuk menjelajahi keindahan dan keajaiban Pulau Dewata dengan Paket Wisata "Bali Eksplorasi". Segera rencanakan perjalanan Anda dan buatlah kenangan indah di destinasi wisata terbaik di Indonesia!</p>
+                            <div class="clear"></div> 
+                            </div>
+                    <div class="item">
+                        <i class='fas fa-lightbulb'></i>
+                        <h3>Japan</h3>
+                        <p>Jangan lewatkan kesempatan untuk menjelajahi keajaiban dan keindahan Jepang dengan Paket Wisata "Mengagumi Jepang". Segera rencanakan perjalanan Anda dan buatlah kenangan tak terlupakan di tanah matahari terbit!</p>
+                    </div>
+                    <div class="item">
+                        <i class='fas fa-lightbulb'></i>
+                        <h3>Singapore</h3>
+                        <p>Jangan lewatkan kesempatan untuk menjelajahi keajaiban Singapura dengan Paket Singapura Wonderland. Kami siap membawa Anda dalam petualangan tak terlupakan!</p>
+                    </div>
+                    <div class="item">
+                        <i class='far fa-star'></i>
+                        <h3>Bandung</h3>
+                        <p>Jangan lewatkan kesempatan untuk menjelajahi keindahan Bandung dengan Paket Wisata "Bandung Seru". Bergabunglah dengan kami untuk petualangan yang tak terlupakan di kota kreatif ini!</p>
+                    </div>
+                    <div class="item">
+                        <i class='far fa-star'></i>
+                        <h3>Surabaya</h3>
+                        <p>Jangan lewatkan kesempatan untuk menjelajahi keindahan dan keberagaman Surabaya dengan Paket Wisata "Surabaya Terkini". Segera rencanakan perjalanan Anda dan buatlah kenangan indah di kota pahlawan ini!</p>
+                    </div>
+                    <div class="item">
+                        <i class='far fa-star'></i>
+                        <h3>Thrid Feature</h3>
+                        <p>Agen perjalanan kami menyediakan keahlian dan dukungan yang tak tertandingi sepanjang perjalanan Anda. </p>
+                    </div>
+                </div>
+                <hr/>
+                <section>
+                    <div class="closing">
+                    <h1>Your Closing Argument Headline</h1><br/>
+                    <p>Suspendisse egestas rhoncus urna in bibendum. Donec urna neque,euismod sed<br/>
+                    justo quis, convallis tincidunt risus. Phasellus fringilla odio velerat fringilla.</p>
+                    <br/><br/>
+                    <button>CALL TO ACTION</button>
+                </div>
+                </section>
+                <footer>
+                    <h6>Terms of Service Privacy Policy</h6>
+                    <h5>Copyright&copy 2024 alanzoikhwan </h5>
+                </footer>
 
-    if (name == "") {
-        document.getElementById("nameError").innerHTML = "Please enter your name";
-        return false;
-    } else {
-        document.getElementById("nameError").innerHTML = "";
-    }
-
-    if (email == "") {
-        document.getElementById("emailError").innerHTML = "Please enter your email address";
-        return false;
-    } else {
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            document.getElementById("emailError").innerHTML = "Please enter a valid email address";
-            return false;
-        } else {
-            document.getElementById("emailError").innerHTML = "";
-        }
-    }
-
-    if (location == "") {
-        document.getElementById("locationError").innerHTML = "Please select your interest";
-        return false;
-    } else {
-        document.getElementById("locationError").innerHTML = "";
-    }
-
-    alert("Formulir berhasil di kirim!");
-    return true;
-}
-    </script>
+            </div>
+        </section>
     
 </body>
 </html>

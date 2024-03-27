@@ -30,5 +30,6 @@ function validateForm() {
         document.getElementById("locationError").innerHTML = "";
     }
 
+    window.location.href = "succes.html" ;
     return true;
 }
