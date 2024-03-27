@@ -30,6 +30,6 @@ function validateForm() {
         document.getElementById("locationError").innerHTML = "";
     }
 
-    window.location.href = "succes.html" ;
+    alert("Formulir berhasil diverifikasi! Data akan segera diproses.");
     return true;
 }
